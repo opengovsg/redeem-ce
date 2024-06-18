@@ -1,0 +1,13 @@
+{
+  "common": {
+    "contact": "Untuk maklumat lanjut, sila tulis kepada <1>{{ feedbackEmail }}</1>"
+  },
+  "service_unavailable": {
+    "body": "Sila pastikan peranti elektronik anda disambungkan ke internet dan cuba lagi.",
+    "title": "Tiada sambungan internet"
+  },
+  "voucher_not_found": {
+    "body": "Sila periksa semula URL atau klik pada pautan dalam SMS sekali lagi.",
+    "title": "Baucar tidak dapat ditemui. "
+  }
+}

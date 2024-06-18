@@ -1,0 +1,12 @@
+{
+  "buttons": {
+    "cancel": "Batal",
+    "close": "Tutup",
+    "next": "Seterusnya"
+  },
+  "campaignEnded": {
+    "info": "Baucar-baucar tidak boleh digunakan kerana ia telah tamat tempoh pada {{ expiryDate }}.",
+    "title": "Maaf, {{ campaignName }} sudah tamat tempoh",
+    "goCampaignListingPage": "Lihat baucar-baucar lain yang tersedia"
+  }
+}

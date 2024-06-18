@@ -1,0 +1,27 @@
+{
+  "campaign_listing": {
+    "desc": "See other available vouchers",
+    "title": "Want more vouchers?"
+  },
+  "contact": {
+    "call": "Call <1>{{ organiserContactNumber }}</1>",
+    "link": "Submit a help request <1>here</1>",
+    "title": "For more help, contact:"
+  },
+  "more_info": {
+    "additional_info_button": {
+      "desc": "More about your vouchers",
+      "title": "Additional information"
+    },
+    "merchant_list_button": {
+      "desc": "See full merchant list",
+      "title": "Where to use vouchers"
+    },
+    "title": "More info"
+  },
+  "tips": {
+    "access": "To access your vouchers, tap the voucher link sent to you by SMS. You don't need to log in with Singpass again.",
+    "share": "To share your vouchers, copy your voucher link and send it to family members or trusted kin.",
+    "title": "Voucher Tips"
+  }
+}

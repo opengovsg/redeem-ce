@@ -1,0 +1,252 @@
+@import 'src/styles/colors.scss';
+@import 'src/styles/constants.scss';
+
+$redemption-card-cutout-radius: 8px;
+$redemption-card-bottom-padding-top: 8px;
+$redemption-card-bottom-padding-bottom: 8px;
+$redemption-card-max-height: 420px;
+
+.redemption-card {
+  flex-grow: 1;
+  max-height: $redemption-card-max-height;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.06))
+    drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+
+  &.vouchers-state-redeemed {
+    min-height: 0;
+    height: auto;
+  }
+
+  .redemption-card-top {
+    box-sizing: border-box;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px 16px 0 0;
+    background: radial-gradient(
+          circle at top left,
+          white #{$redemption-card-cutout-radius},
+          white 0
+        )
+        top left,
+      radial-gradient(
+          circle at top right,
+          white #{$redemption-card-cutout-radius},
+          white 0
+        )
+        top right,
+      radial-gradient(
+          circle at bottom right,
+          transparent #{$redemption-card-cutout-radius},
+          white 0
+        )
+        bottom right,
+      radial-gradient(
+          circle at bottom left,
+          transparent #{$redemption-card-cutout-radius},
+          white 0
+        )
+        bottom left;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    margin-bottom: -1px;
+
+    .redemption-card-value-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        color: $palette-primary-700; // Primary 600
+      }
+
+      :not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+  }
+  .redemption-card-border {
+    width: calc(100% - 2 * #{$redemption-card-cutout-radius} - 24px);
+    align-self: center;
+    z-index: 100;
+    border-top: 2px dashed $palette-primary-200;
+    color: transparent;
+  }
+  .redemption-card-bottom {
+    position: relative;
+    flex-grow: 1;
+    position: relative;
+    box-sizing: border-box;
+    padding: #{$redemption-card-bottom-padding-top} 16px #{$redemption-card-bottom-padding-bottom}
+      16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 0 16px 16px;
+    margin-top: -2px;
+    background: radial-gradient(
+          circle at top left,
+          transparent #{$redemption-card-cutout-radius},
+          white 0
+        )
+        top left,
+      radial-gradient(
+          circle at top right,
+          transparent #{$redemption-card-cutout-radius},
+          white 0
+        )
+        top right,
+      radial-gradient(
+          circle at bottom right,
+          white #{$redemption-card-cutout-radius},
+          white 0
+        )
+        bottom right,
+      radial-gradient(
+          circle at bottom left,
+          white #{$redemption-card-cutout-radius},
+          white 0
+        )
+        bottom left;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+
+    .voucher-logo-overlay {
+      position: absolute;
+      width: 35%;
+      max-height: 18%;
+      max-width: 157px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+    }
+
+    .voucher-logo-redeem-voucher-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-height: calc(100% - 24px);
+      max-width: 157px;
+      transform: translate(-50%, -50%);
+      display: flex;
+    }
+
+    .voucher-redeemed-stamp {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      color: $palette-danger-500;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 200; // arbitrary larger than the one zindex in e2e utils will do.
+
+      > * {
+        transform: matrix(1, 0.06, -0.05, 1, 0, 0);
+      }
+
+      .voucher-redeemed-stamp-top {
+        display: flex;
+        width: 91.3%;
+        justify-content: center;
+        align-items: center;
+        .voucher-redeemed-stamp-top-line {
+          height: 3px;
+          background: $palette-danger-500;
+          width: 34.5%;
+        }
+        svg {
+          color: $palette-danger-500;
+        }
+        :not(:first-child) {
+          margin-left: 8px;
+        }
+      }
+      .voucher-redeemed-stamp-main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .voucher-redeemed-stamp-center-line {
+          background: $palette-danger-500;
+          height: 3px;
+          width: 8.5%;
+          margin-bottom: 16px;
+        }
+        .voucher-redeemed-stamp-text-container {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+          align-items: center;
+          .voucher-redeemed-stamp-text-title {
+            font-family: Dosis;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.625rem;
+            line-height: 100%;
+            /* or 26px */
+
+            display: flex;
+            letter-spacing: 0.03rem;
+            text-transform: uppercase;
+
+            @media screen and (min-width: 360px) {
+              font-size: 2rem;
+            }
+          }
+
+          .voucher-redeemed-stamp-timestamp {
+            font-family: Dosis;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 100%;
+            /* or 9px */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-top: 8px;
+          }
+
+          .voucher-redeemed-stamp-location {
+            font-family: Dosis;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            margin-top: 4px;
+            /* or 9px */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .voucher-redeemed-stamp-bottom {
+        height: 3px;
+        background: $palette-danger-500;
+        width: 91.3%;
+        margin-top: 8px;
+      }
+    }
+  }
+}

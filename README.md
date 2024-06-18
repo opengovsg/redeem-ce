@@ -21,7 +21,7 @@ takes to repackage Redeem for use in other contexts.
 
 ## Overview
 
-RedeemCE is a monorepo managed with Lerna, consisting of several packages:
+RedeemCE is a monorepo managed with pnpm, consisting of several packages:
 
 ### Voucher
 

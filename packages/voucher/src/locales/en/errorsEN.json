@@ -1,0 +1,13 @@
+{
+  "common": {
+    "contact": "For more information, please write to <1>{{ feedbackEmail }}</1>"
+  },
+  "service_unavailable": {
+    "body": "Please make sure your device is connected to the internet and try again.",
+    "title": "No network connection"
+  },
+  "voucher_not_found": {
+    "body": "Please double check the URL or click on the link in the SMS again.",
+    "title": "The voucher cannot be found."
+  }
+}

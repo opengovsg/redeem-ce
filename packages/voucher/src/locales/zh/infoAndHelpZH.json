@@ -1,0 +1,23 @@
+{
+  "info_and_help": {
+    "title": "更多详情",
+    "close_button": "关闭",
+    "general_info_button": {
+      "desc": "查看更多有关购物券的详情",
+      "title": "一般信息"
+    },
+    "share_vouchers_button": {
+      "desc": "点击此处以复制购物券链接，并将链接发送给家人或亲友",
+      "title": "分享购物券"
+    },
+    "give_feedback_button": {
+      "desc": "请让我们知道如何作出改善",
+      "title": "提供反馈"
+    }
+  },
+  "contact": {
+    "call": "拨打 <1>{{ organiserContactNumber }}</1>",
+    "link": "<1>点击此处</1>提交援助请求",
+    "title": "如需更多帮助，请联系："
+  }
+}

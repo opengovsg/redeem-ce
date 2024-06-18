@@ -1,0 +1,27 @@
+{
+  "campaign_listing": {
+    "desc": "查看其他可使用的购物券",
+    "title": "想要获得更多购物券？"
+  },
+  "contact": {
+    "call": "拨打 <1>{{ organiserContactNumber }}</1>",
+    "link": "<1>点击此处</1>提交援助请求",
+    "title": "如需更多帮助，请联系："
+  },
+  "more_info": {
+    "additional_info_button": {
+      "desc": "更多关于您的购物券的信息",
+      "title": "其他信息"
+    },
+    "merchant_list_button": {
+      "desc": "查看完整的商户名单",
+      "title": "哪里可以使用购物券"
+    },
+    "title": "更多信息"
+  },
+  "tips": {
+    "access": "要使用您的购物券，请点击通过手机短信发送给您的购物券链接。您无需再次使用Singpass登录。",
+    "share": "要分享您的购物券，请复制您的购物券链接，并将链接发送给家庭成员或您信赖的亲人。",
+    "title": "使用购物券贴士"
+  }
+}

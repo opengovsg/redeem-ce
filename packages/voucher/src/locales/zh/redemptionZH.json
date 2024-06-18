@@ -1,0 +1,19 @@
+{
+  "back": "返回",
+  "back_to_home": "返回主页",
+  "close": "关闭",
+  "footer": {
+    "terms_and_conditions": "条款与条件",
+    "general_info": "一般信息"
+  },
+  "instructions": "向商店出示",
+  "modals": {
+    "already_redeemed": {
+      "action": "选择其他购物券",
+      "body": "您选择的购物券已经使用过了。\r\n\r\n\r\n请选择其他购物券。",
+      "title": "已使用"
+    }
+  },
+  "redeemed_stamp_label": "已使用",
+  "use_by": "请在{{expiryDate}}之前使用"
+}

@@ -1,0 +1,9 @@
+{
+  "copy_success": {
+    "header": "Voucher link copied!",
+    "message": "To share your vouchers, send this link to family members or trusted kin."
+  },
+  "max_vouchers": {
+    "header": "You can select only up to {{voucher_limit}} vouchers at a time. If you need to use more vouchers for this purchase, use these first, then select more."
+  }
+}

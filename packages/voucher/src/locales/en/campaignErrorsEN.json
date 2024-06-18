@@ -1,0 +1,12 @@
+{
+  "expired": {
+    "body": "cannot be used as they expired on {{expiryDate}}. For more help, please <1>contact the organiser</1>.",
+    "header": "Vouchers have expired",
+    "other_vouchers": "See other available vouchers"
+  },
+  "inactive": {
+    "body": "The voucher(s) cannot be used as campaign is not active. For more help, please <1>contact the organiser</1>.",
+    "header": "Vouchers not active",
+    "other_vouchers": "See other available vouchers"
+  }
+}

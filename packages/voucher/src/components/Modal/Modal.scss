@@ -1,0 +1,97 @@
+@import 'src/styles/colors';
+
+$modal-content-relative-bottom: 60px;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: -webkit-fill-available;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.modal-main {
+  background: white;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  max-height: calc(100vh - 100px);
+  box-shadow: 0px 0px 20px rgba(97, 108, 137, 0.3);
+  border-radius: 4px;
+  display: flex;
+  margin: calc(#{$modal-content-relative-bottom} + 20px) 20px 20px 20px;
+  flex-direction: column;
+  max-width: 20rem;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    // scrollbar-width: thin;
+    // scrollbar-height: thin;
+
+    scrollbar-color: #bbb;
+    width: 10px;
+    height: 10px;
+    z-index: 3;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 3;
+    transform: translateY(-10px);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background-color: #bbb;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    z-index: 3;
+  }
+
+  .modal-icon {
+    align-self: center;
+
+    svg {
+      transform: translateY(-50%);
+    }
+  }
+
+  .modal-content {
+    overflow-y: auto;
+    position: relative;
+    bottom: $modal-content-relative-bottom;
+    margin-bottom: -#{$modal-content-relative-bottom};
+    padding: 0 1rem 1rem 1rem;
+    .modal-header {
+      text-align: center;
+      &.error {
+        color: $palette-danger-500;
+      }
+    }
+
+    .modal-body {
+      margin-top: 1.5rem;
+      color: $palette-neutral-800;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-main {
+    width: 480px;
+  }
+}

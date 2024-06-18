@@ -1,0 +1,8 @@
+{
+  "contact_footer": "若您需要协助，请电邮 {{feedbackEmail}} 与我们联系。",
+  "redeem_button": "出示购物券",
+  "redeemed_stamp_label": "已使用",
+  "footer": {
+    "view_terms_and_conditions": "查看<1>条款和条件</1>"
+  }
+}

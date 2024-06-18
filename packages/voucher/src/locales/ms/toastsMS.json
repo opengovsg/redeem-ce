@@ -1,0 +1,9 @@
+{
+  "copy_success": {
+    "header": "Pautan baucar disalin!",
+    "message": "Untuk kongsi baucar anda, hantar pautan ini kepada anggota keluarga atau saudara- mara yang dipercayai."
+  },
+  "max_vouchers": {
+    "header": "Anda boleh memilih sehingga {{voucher_limit}} baucar pada satu masa. Jika anda perlu menggunakan lebih banyak baucar untuk pembelian ini, gunakan ini dahulu, kemudian pilih lagi."
+  }
+}

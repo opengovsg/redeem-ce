@@ -1,0 +1,9 @@
+{
+  "contact_footer": "For assistance, please contact us at {{feedbackEmail}}.",
+  "redeem_button": "Show voucher",
+  "redeemed_stamp_label": "Redeemed",
+  "voided_stamp_label": "Void",
+  "footer": {
+    "view_terms_and_conditions": "View <1>terms and conditions</1>"
+  }
+}

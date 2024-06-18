@@ -1,0 +1,14 @@
+export const MERCHANT_NAMES = {
+  NO_TYPES: 'SHEIKHS SHACK',
+  REGULAR: 'SHEIKHS REGULAR',
+  SUPERMARKET: 'SHEIKH SHIONG SUPERMARKET',
+}
+
+export const MERCHANT_ID = 'merchant_b5deaec4-b69d-4de0-b778-4d066c89e7f3'
+
+export const DEFAULT_LAST_REDEEMED_TIMESTAMP = '2022-10-13T16:02:07.000+08:00'
+
+export const VOUCHER_TYPES = {
+  REGULAR: 'regular',
+  SUPERMARKET: 'supermarket',
+}

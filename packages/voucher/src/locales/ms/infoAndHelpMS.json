@@ -1,0 +1,23 @@
+{
+  "info_and_help": {
+    "title": "Maklumat & Bantuan",
+    "close_button": "Tutup",
+    "general_info_button": {
+      "desc": "Ketahui lebih lanjut tentang baucar anda",
+      "title": "Maklumat umum"
+    },
+    "share_vouchers_button": {
+      "desc": "Klik di sini untuk menyalin pautan baucar anda dan mengirimkannya kepada ahli keluarga atau saudara-mara terdekat",
+      "title": "Kongsi baucar anda"
+    },
+    "give_feedback_button": {
+      "desc": "Beritahu kami bagaimana kami boleh bertambah baik",
+      "title": "Maklum balas"
+    }
+  },
+  "contact": {
+    "call": "Telefon <1>{{ organiserContactNumber }}</1>",
+    "link": "Hantar permohonan untuk bantuan di <1>sini</1>",
+    "title": "Untuk bantuan lanjut, hubungi:"
+  }
+}

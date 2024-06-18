@@ -1,0 +1,23 @@
+{
+  "contact": {
+    "call": "Call <1>{{ organiserContactNumber }}</1>",
+    "link": "Submit a help request <1>here</1>",
+    "title": "For more help, contact:"
+  },
+  "info_and_help": {
+    "close_button": "Close",
+    "general_info_button": {
+      "desc": "Learn more about your vouchers",
+      "title": "General information"
+    },
+    "give_feedback_button": {
+      "desc": "Tell us how we can improve",
+      "title": "Feedback"
+    },
+    "share_vouchers_button": {
+      "desc": "Tap here to copy your voucher link and send it to family members or trusted kin",
+      "title": "Share your vouchers"
+    },
+    "title": "Info & help"
+  }
+}

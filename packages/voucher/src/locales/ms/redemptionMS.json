@@ -1,0 +1,19 @@
+{
+  "back": "Kembali",
+  "back_to_home": "Kembali ke Laman Utama",
+  "close": "Tutup",
+  "footer": {
+    "terms_and_conditions": "Terma dan Syarat",
+    "general_info": "Maklumat umum"
+  },
+  "instructions": "Tunjukkan ke penjaja atau pedagang",
+  "modals": {
+    "already_redeemed": {
+      "action": "Pilih baucar(-baucar) lain.",
+      "body": "Baucar(-baucar) yang dipilih sudah pun ditebus.\r\n\r\n\r\nSila pilih baucar(-baucar) lain.",
+      "title": "Telah ditebus"
+    }
+  },
+  "redeemed_stamp_label": "Ditebus",
+  "use_by": "Gunakan hingga {{expiryDate}}"
+}

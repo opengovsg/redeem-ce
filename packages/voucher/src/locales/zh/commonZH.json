@@ -1,0 +1,12 @@
+{
+  "buttons": {
+    "cancel": "取消",
+    "close": "关闭",
+    "next": "下一步"
+  },
+  "campaignEnded": {
+    "info": "购物券无法使用, 因为已经在 {{ expiryDate }} 过期。",
+    "title": "{{ campaignName }} 购物券已经过期",
+    "goCampaignListingPage": "查看其他可领取的购物券"
+  }
+}

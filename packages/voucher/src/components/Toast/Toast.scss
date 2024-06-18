@@ -1,0 +1,49 @@
+@import 'src/styles/colors.scss';
+
+.toast {
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  transform: scale(0);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.success {
+    background: $palette-success-100;
+    border: 1px solid #{$palette-success-500};
+    button {
+      color: $palette-success-500;
+    }
+  }
+
+  &.warning {
+    background: $palette-warning-100;
+    border: 1px solid #{$palette-warning-500};
+
+    button {
+      color: $palette-neutral-900;
+    }
+  }
+
+  &.visible {
+    transform: scale(1);
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  .toast-text {
+    color: $palette-neutral-900;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8px;
+
+    span {
+      color: currentColor;
+    }
+  }
+}

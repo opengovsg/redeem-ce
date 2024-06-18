@@ -1,0 +1,13 @@
+{
+  "common": {
+    "contact": "欲了解更多详情，请电邮 <1>{{ feedbackEmail }}</1>"
+  },
+  "service_unavailable": {
+    "body": "请确保您已连接网络并重试。",
+    "title": "无网络连接"
+  },
+  "voucher_not_found": {
+    "body": "请仔细检查网址或再次点击手机简讯中的链接。",
+    "title": "此购物券不存在。"
+  }
+}

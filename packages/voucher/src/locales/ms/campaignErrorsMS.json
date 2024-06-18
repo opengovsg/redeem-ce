@@ -1,0 +1,12 @@
+{
+  "expired": {
+    "body": "tidak boleh digunakan kerana ia telah tamat tempoh pada {{expiryDate}}. Untuk bantuan lanjut, sila <1>hubungi penganjur</1>.",
+    "header": "Baucar telah tamat tempoh",
+    "other_vouchers": "Lihat baucar-baucar lain yang tersedia"
+  },
+  "inactive": {
+    "body": "Baucar(-baucar) tidak boleh digunakan kerana kempen tidak aktif. Untuk bantuan lanjut, sila <1>hubungi penganjur</1>.",
+    "header": "Baucar Tidak Aktif",
+    "other_vouchers": "Lihat baucar-baucar lain yang tersedia"
+  }
+}

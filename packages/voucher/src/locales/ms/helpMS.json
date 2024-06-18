@@ -1,0 +1,27 @@
+{
+  "campaign_listing": {
+    "desc": "Lihat baucar-baucar lain yang tersedia",
+    "title": "Mahu lebih banyak baucar?"
+  },
+  "contact": {
+    "call": "Telefon <1>{{ organiserContactNumber }}</1>",
+    "link": "Hantar permohonan untuk bantuan <1>di sini</1>",
+    "title": "Untuk bantuan lanjut, hubungi:"
+  },
+  "more_info": {
+    "additional_info_button": {
+      "desc": "Maklumat lanjut tentang baucar anda",
+      "title": "Maklumat tambahan"
+    },
+    "merchant_list_button": {
+      "desc": "Lihat senarai penuh peniaga",
+      "title": "Di mana boleh gunakan baucar"
+    },
+    "title": "Maklumat lanjut"
+  },
+  "tips": {
+    "access": "Untuk mengakses baucar anda, ketik pautan baucar yang dihantar kepada anda melalui SMS. Anda tidak perlu log masuk dengan Singpass lagi.",
+    "share": "Untuk kongsi baucar anda, salin pautan baucar anda dan hantar kepada anggota keluarga atau saudara-mara yang dipercayai.",
+    "title": "Tip-tip baucar"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "back": "Back",
+  "back_to_home": "Back to Home",
+  "close": "Close",
+  "footer": {
+    "terms_and_conditions": "Terms and conditions",
+    "general_info": "General info"
+  },
+  "instructions": "Show to shop",
+  "modals": {
+    "already_redeemed": {
+      "action": "Select other voucher(s)",
+      "body": "The voucher(s) selected were already redeemed. \r\n\r\n\r\nPlease select other voucher(s).",
+      "title": "Already redeemed"
+    }
+  },
+  "redeemed_stamp_label": "Redeemed",
+  "use_by": "Use by {{expiryDate}}"
+}

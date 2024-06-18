@@ -1,0 +1,8 @@
+{
+  "desktop": {
+    "alert": "Untuk menebus baucar anda, gunakan telefon bimbit anda untuk mengakses pautan baucar dan tunjukkan kod QR kepada peniaga."
+  },
+  "voided": {
+    "header": "Baucar anda telah terbatal. Untuk mengetahui sebabnya, hubungi penganjur <2>di sini</2>."
+  }
+}

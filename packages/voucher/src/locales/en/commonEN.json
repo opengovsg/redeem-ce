@@ -1,0 +1,12 @@
+{
+  "buttons": {
+    "cancel": "Cancel",
+    "close": "Close",
+    "next": "Next"
+  },
+  "campaignEnded": {
+    "info": "The voucher(s) cannot be claimed as they expired on {{ expiryDate }}.",
+    "title": "Sorry, the {{ campaignName }} campaign has expired",
+    "goCampaignListingPage": "See other vouchers available"
+  }
+}

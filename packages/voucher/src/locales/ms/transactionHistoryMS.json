@@ -1,0 +1,10 @@
+{
+  "title": "Sejarah",
+  "content": {
+    "total_spent": "Jumlah perbelanjaan"
+  },
+  "empty": {
+    "info": "Anda belum membelanjakan sebarang baucar. Sebaik sahaja anda menggunakannya, ia akan muncul di sini.",
+    "back_to_home": "Kembali ke Laman Utama"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "History",
+  "content": {
+    "total_spent": "Total spent"
+  },
+  "empty": {
+    "info": "You have not spent any vouchers yet. Once you do, they will appear here.",
+    "back_to_home": "Back to home"
+  }
+}

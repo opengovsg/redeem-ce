@@ -1,0 +1,156 @@
+@import './colors.scss';
+
+.paragraph-3 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.paragraph-4 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.body-1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  letter-spacing: -0.011em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+.body-2 {
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  letter-spacing: -0.006em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+.caption-1 {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  white-space: pre-wrap;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+
+  a {
+    color: $palette-primary-500;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  &.caps {
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+  }
+}
+
+.caption-2 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  letter-spacing: -0.019em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.019em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.019em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.014em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+.display-2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  letter-spacing: -0.022em;
+  font-feature-settings: 'cv05' on;
+}
+
+.subhead-1 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.011em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+.subhead-2 {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.006em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+.legal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.625rem;
+  line-height: 0.75em;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'cv05' on;
+}
+
+.language-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.language-ta {
+  .subhead-1 {
+    font-weight: 600;
+  }
+  .subhead-2 {
+    font-weight: 600;
+  }
+}
