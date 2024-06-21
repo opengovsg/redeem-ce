@@ -2,10 +2,10 @@ name: Voucher
 
 on:
   push:
-    branches: [develop, master]
+    branches: [develop]
   pull_request:
     # defaults to run on opened, reopened, synchronized and assigned
-    branches: [develop, master]
+    branches: [develop]
 env: # Environment variables
   PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 jobs:
