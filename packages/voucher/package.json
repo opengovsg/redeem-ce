@@ -39,7 +39,7 @@
     "react-scripts": "^5.0.1",
     "sass": "^1.77.1",
     "snakecase-keys": "^8.0.1",
-    "usehooks-ts": "^2.9.1",
+    "usehooks-ts": "^3.1.0",
     "uuid": "^8.3.2"
   },
   "scripts": {
