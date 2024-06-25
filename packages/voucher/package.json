@@ -35,7 +35,7 @@
     "react-hot-toast": "^2.1.1",
     "react-i18next": "^11.17.4",
     "react-icons": "^5.2.1",
-    "react-router-dom": "^6.23.1",
+    "react-router-dom": "^6.24.0",
     "react-scripts": "^5.0.1",
     "sass": "^1.77.1",
     "snakecase-keys": "^8.0.1",
