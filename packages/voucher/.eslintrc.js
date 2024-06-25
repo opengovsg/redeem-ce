@@ -49,7 +49,7 @@ module.exports = {
     ],
     'import/no-extraneous-dependencies': [
       'error',
-      {devDependencies: ['e2e/**/*.ts', 'playwright.config.ts']},
+      {devDependencies: ['e2e/**/*.ts', 'playwright.config.ts', 'src/setupTests.js']},
     ],
     'chakra-ui/props-order': [
       'error',
