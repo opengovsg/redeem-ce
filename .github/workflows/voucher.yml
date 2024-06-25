@@ -50,7 +50,7 @@ jobs:
           DEBUG: pw:api
       - name: Upload failure report to GitHub actions Artificats
         if: ${{ failure() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: diffs
           path: test-results/
