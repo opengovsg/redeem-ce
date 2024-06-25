@@ -82,7 +82,7 @@
     "@types/dompurify": "^3.0.5",
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.14.172",
-    "@types/node": "^20.12.11",
+    "@types/node": "^20.14.8",
     "@types/qrcode": "^1.4.2",
     "@types/qs": "^6.9.7",
     "@types/react": "^18.3.2",
