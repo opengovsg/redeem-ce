@@ -20,7 +20,7 @@
     "focus-visible": "^5.2.0",
     "framer-motion": "^11.1.9",
     "i18next": "^21.8.11",
-    "i18next-browser-languagedetector": "^6.1.4",
+    "i18next-browser-languagedetector": "^8.0.0",
     "launchdarkly-react-client-sdk": "^3.0.8",
     "lodash": "^4.17.21",
     "moment-timezone": "^0.5.45",
