@@ -25,10 +25,10 @@ importers:
         version: 2.0.14
       '@datadog/browser-logs':
         specifier: ^4.28.0
-        version: 4.50.1(@datadog/browser-rum@4.50.1)
+        version: 4.50.1(@datadog/browser-rum@5.21.0)
       '@datadog/browser-rum':
-        specifier: ^4.8.1
-        version: 4.50.1(@datadog/browser-logs@4.50.1)
+        specifier: ^5.21.0
+        version: 5.21.0(@datadog/browser-logs@4.50.1)
       '@emotion/react':
         specifier: ^11.11.4
         version: 11.11.4(@types/react@18.3.3)(react@18.3.1)
@@ -1576,6 +1576,9 @@ packages:
   '@datadog/browser-core@4.50.1':
     resolution: {integrity: sha512-2ypS19XngsMu6W4qUBtDwvImFz886Im+PziOnEycO1w41TVS5LH8/vWBMvjSf8Suer+CeRjRN9IOu0ocRx9BVw==}
 
+  '@datadog/browser-core@5.21.0':
+    resolution: {integrity: sha512-F0lZCwHwGCryhyRAg9x9Aeq8FsYMxA41vwyBeyFHbh+er5UrQl/LuKdrRMSxz3kpaBdHppLP920voTSvooHiug==}
+
   '@datadog/browser-logs@4.50.1':
     resolution: {integrity: sha512-uSM+T+hAQDH4lUjWNNyj8MfhQKp+sFo88UBaHUzpg0Kio/gZ+tIL7/HmTLCN5eLDWNJfH8eJuCb5Gtcvo14Pkg==}
     peerDependencies:
@@ -1584,13 +1587,13 @@ packages:
       '@datadog/browser-rum':
         optional: true
 
-  '@datadog/browser-rum-core@4.50.1':
-    resolution: {integrity: sha512-ABCzEjNiBq3izapvSq6uujdx9h7L4RM44n22qDhwSIBlQY6Psf9VlzlQ5fueCALoj2LgVy4rYDj5RHfGaF/lAQ==}
+  '@datadog/browser-rum-core@5.21.0':
+    resolution: {integrity: sha512-jHDnRX+SwXJrAFqgEJ+Eg9E6zC9R3RTYtSIIwNI+vWbuzZRC/Wb8BJmeG2focn0ooCCfdzMgpGZ0F37+0Qn0Zg==}
 
-  '@datadog/browser-rum@4.50.1':
-    resolution: {integrity: sha512-Gcs8fMoufOr4Xlhwx0g6CHvgcXVNeCM+IyAtRAwoCBeezRhL18Jo1LALE+nsLegNKgNLO1f4vjm5TBx1WsnXWQ==}
+  '@datadog/browser-rum@5.21.0':
+    resolution: {integrity: sha512-wSyaMgSCKOMtbqLiyiODTfFtq7wp79uIokhLkxwF34zq+y7Y7kqh5ZvR8tLXDlddJaKFKoNlUse5E817xd0ZjA==}
     peerDependencies:
-      '@datadog/browser-logs': 4.50.1
+      '@datadog/browser-logs': 5.21.0
     peerDependenciesMeta:
       '@datadog/browser-logs':
         optional: true
@@ -8939,22 +8942,24 @@ snapshots:
 
   '@datadog/browser-core@4.50.1': {}
 
-  '@datadog/browser-logs@4.50.1(@datadog/browser-rum@4.50.1)':
+  '@datadog/browser-core@5.21.0': {}
+
+  '@datadog/browser-logs@4.50.1(@datadog/browser-rum@5.21.0)':
     dependencies:
       '@datadog/browser-core': 4.50.1
     optionalDependencies:
-      '@datadog/browser-rum': 4.50.1(@datadog/browser-logs@4.50.1)
+      '@datadog/browser-rum': 5.21.0(@datadog/browser-logs@4.50.1)
 
-  '@datadog/browser-rum-core@4.50.1':
+  '@datadog/browser-rum-core@5.21.0':
     dependencies:
-      '@datadog/browser-core': 4.50.1
+      '@datadog/browser-core': 5.21.0
 
-  '@datadog/browser-rum@4.50.1(@datadog/browser-logs@4.50.1)':
+  '@datadog/browser-rum@5.21.0(@datadog/browser-logs@4.50.1)':
     dependencies:
-      '@datadog/browser-core': 4.50.1
-      '@datadog/browser-rum-core': 4.50.1
+      '@datadog/browser-core': 5.21.0
+      '@datadog/browser-rum-core': 5.21.0
     optionalDependencies:
-      '@datadog/browser-logs': 4.50.1(@datadog/browser-rum@4.50.1)
+      '@datadog/browser-logs': 4.50.1(@datadog/browser-rum@5.21.0)
 
   '@emotion/babel-plugin@11.11.0':
     dependencies:
