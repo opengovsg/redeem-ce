@@ -7,7 +7,7 @@
     "@chakra-ui/theme-tools": "^2.1.2",
     "@chakra-ui/utils": "^2.0.14",
     "@datadog/browser-logs": "^4.28.0",
-    "@datadog/browser-rum": "^4.8.1",
+    "@datadog/browser-rum": "^5.21.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.8.1",
     "@playwright/test": "^1.44.0",
