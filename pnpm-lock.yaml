@@ -24,11 +24,11 @@ importers:
         specifier: ^2.0.14
         version: 2.0.14
       '@datadog/browser-logs':
-        specifier: ^4.28.0
-        version: 4.50.1(@datadog/browser-rum@4.50.1)
+        specifier: ^5.22.0
+        version: 5.22.0(@datadog/browser-rum@4.50.1)
       '@datadog/browser-rum':
         specifier: ^4.8.1
-        version: 4.50.1(@datadog/browser-logs@4.50.1)
+        version: 4.50.1(@datadog/browser-logs@5.22.0)
       '@emotion/react':
         specifier: ^11.11.4
         version: 11.11.4(@types/react@18.3.3)(react@18.3.1)
@@ -1576,10 +1576,13 @@ packages:
   '@datadog/browser-core@4.50.1':
     resolution: {integrity: sha512-2ypS19XngsMu6W4qUBtDwvImFz886Im+PziOnEycO1w41TVS5LH8/vWBMvjSf8Suer+CeRjRN9IOu0ocRx9BVw==}
 
-  '@datadog/browser-logs@4.50.1':
-    resolution: {integrity: sha512-uSM+T+hAQDH4lUjWNNyj8MfhQKp+sFo88UBaHUzpg0Kio/gZ+tIL7/HmTLCN5eLDWNJfH8eJuCb5Gtcvo14Pkg==}
+  '@datadog/browser-core@5.22.0':
+    resolution: {integrity: sha512-Me7N+l+T5DyN4xnJmnxB93TWxj+u9YwMghvcqS3LLCxSj+fpG/aLlK9hvDG2uhZsnsQdiULrzlbjfekjijwunQ==}
+
+  '@datadog/browser-logs@5.22.0':
+    resolution: {integrity: sha512-7mXQwcwilRvhVVQj1CAs5TZgk3mgVWvPJPL/hMfdvHh8GotSp8bNK6cd6mmLtPwRc7AAtobj3Tnj/pXLNtpQlQ==}
     peerDependencies:
-      '@datadog/browser-rum': 4.50.1
+      '@datadog/browser-rum': 5.22.0
     peerDependenciesMeta:
       '@datadog/browser-rum':
         optional: true
@@ -8939,22 +8942,24 @@ snapshots:
 
   '@datadog/browser-core@4.50.1': {}
 
-  '@datadog/browser-logs@4.50.1(@datadog/browser-rum@4.50.1)':
+  '@datadog/browser-core@5.22.0': {}
+
+  '@datadog/browser-logs@5.22.0(@datadog/browser-rum@4.50.1)':
     dependencies:
-      '@datadog/browser-core': 4.50.1
+      '@datadog/browser-core': 5.22.0
     optionalDependencies:
-      '@datadog/browser-rum': 4.50.1(@datadog/browser-logs@4.50.1)
+      '@datadog/browser-rum': 4.50.1(@datadog/browser-logs@5.22.0)
 
   '@datadog/browser-rum-core@4.50.1':
     dependencies:
       '@datadog/browser-core': 4.50.1
 
-  '@datadog/browser-rum@4.50.1(@datadog/browser-logs@4.50.1)':
+  '@datadog/browser-rum@4.50.1(@datadog/browser-logs@5.22.0)':
     dependencies:
       '@datadog/browser-core': 4.50.1
       '@datadog/browser-rum-core': 4.50.1
     optionalDependencies:
-      '@datadog/browser-logs': 4.50.1(@datadog/browser-rum@4.50.1)
+      '@datadog/browser-logs': 5.22.0(@datadog/browser-rum@4.50.1)
 
   '@emotion/babel-plugin@11.11.0':
     dependencies:
