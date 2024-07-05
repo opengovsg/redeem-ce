@@ -1,0 +1,70 @@
+.badge {
+  display: inline-block;
+  border-radius: $base-border-radius * 0.5;
+  font-weight: 500;
+  font-size: 0.7em;
+  padding: 0.25em 0.5em;
+  letter-spacing: 0.2px;
+  color: $palette-neutral-700;
+  background: $palette-neutral-200;
+  // border: 1px solid $palette-neutral-400;
+  white-space: nowrap;
+
+  &.badge-primary {
+    color: $brand-primary-600;
+    background: $brand-primary-050;
+    border: 1px solid $brand-primary-100;
+  }
+
+  &.badge-secondary {
+    color: $brand-secondary-700;
+    background: $brand-secondary-100;
+    border: 1px solid $brand-secondary-200;
+  }
+
+  &.badge-success {
+    color: $palette-green-700;
+    background: $palette-green-050;
+    border: 1px solid $palette-green-300;
+  }
+
+  &.badge-danger {
+    color: $palette-red-600;
+    background: $palette-red-050;
+    border: 1px solid $palette-red-100;
+  }
+
+  &.badge-warning {
+    color: $palette-orange-700;
+    background: $palette-orange-100;
+    border: 1px solid $palette-orange-200;
+  }
+
+  &.badge-info {
+    color: $palette-blue-600;
+    background: $palette-blue-100;
+    border: 1px solid $palette-blue-200;
+  }
+
+  &.badge-dark {
+    color: $palette-neutral-700;
+    background: $palette-neutral-200;
+    border: 1px solid $palette-neutral-400;
+  }
+
+  &.badge-light {
+    color: $palette-neutral-600;
+    background: $palette-neutral-050;
+    border: 1px solid $palette-neutral-100;
+  }
+}
+
+.badge-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .badge {
+    margin-right: 1em;
+  }
+}

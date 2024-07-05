@@ -1,0 +1,37 @@
+@import 'src/styles/styles';
+
+.no-campaign {
+  .container {
+    .row {
+      .col-12 {
+        .card {
+          padding-top: 5em;
+          padding-bottom: 5em;
+          .card-body {
+            img {
+              margin-bottom: 3em;
+              width: 400px;
+            }
+            h1 {
+              font-size: 2em;
+              text-align: center;
+              margin-bottom: 1em;
+            }
+
+            p {
+              max-width: 60ch;
+              margin-bottom: 2em;
+              text-align: center;
+            }
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.style-guide-container {
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  .back-button {
+    button {
+      padding-left: 0;
+    }
+
+    margin-bottom: 2em;
+  }
+
+  .btn-group {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  h2,
+  h3 {
+    margin-top: 1em;
+  }
+
+  .card {
+    padding-bottom: 3em;
+    margin-bottom: 4em;
+  }
+
+  .guide-list {
+    list-style-type: disc;
+    text-indent: 2em;
+    margin-bottom: 1em;
+  }
+}

@@ -1,0 +1,16 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# production
+/build
+
+# misc
+.env.development
+.env.production
+.env.staging
+.env.test
+
+# We want to keep the json small on purpose. 
+/src/json/

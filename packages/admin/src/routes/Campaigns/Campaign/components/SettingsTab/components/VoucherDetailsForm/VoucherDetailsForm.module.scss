@@ -1,0 +1,23 @@
+@import 'src/styles/styles';
+
+sub {
+  color: $palette-neutral-600;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.addVoucherButtonGroup {
+  margin-top: 0.5em;
+}
+
+.openColourPickerbutton {
+  margin-right: 0.6em !important;
+}
+
+.colourPickerContainer {
+  top: 80%;
+  width: 250px;
+}

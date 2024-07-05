@@ -1,0 +1,5 @@
+export { BiErrorCircle } from './BiErrorCircle'
+export { BiInfoCircle } from './BiInfoCircle'
+export { BiX } from './BiX'
+export { BiCheckCircle } from './BiCheckCircle'
+export { BiXCircle } from './BiXCircle'

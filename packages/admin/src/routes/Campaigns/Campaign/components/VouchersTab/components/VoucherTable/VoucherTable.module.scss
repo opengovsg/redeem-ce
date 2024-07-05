@@ -1,0 +1,118 @@
+@import 'src/styles/styles';
+
+.statusFilterNavContainer {
+  width: 100%;
+  margin-top: 2em;
+  // margin-bottom: 1.5em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: $palette-neutral-100;
+    display: block;
+  }
+
+  .statusFilterNav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        margin: 0;
+        color: $palette-neutral-800;
+        position: relative;
+        padding-right: 2em;
+        padding-left: 2em;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          position: relative;
+          padding-bottom: 1em;
+          color: $palette-neutral-800;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:hover {
+            color: $brand-primary-600;
+          }
+        }
+
+        &:hover {
+          color: $brand-primary-600;
+
+          ::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: $brand-primary-600;
+            display: block;
+          }
+        }
+
+        &.active {
+          color: $brand-primary-600;
+
+          a {
+            color: $brand-primary-600;
+          }
+
+          ::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: $brand-primary-600;
+            display: block;
+          }
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.paginationButtons {
+  margin-right: 75px;
+}
+
+.pageNumberText {
+  margin-right: 1em;
+}

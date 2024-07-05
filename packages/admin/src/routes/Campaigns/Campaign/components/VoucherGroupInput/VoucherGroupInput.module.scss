@@ -1,0 +1,30 @@
+.voucherValueTableContainer {
+  margin-top: 1em;
+  table {
+    margin-bottom: 0;
+    border-bottom: none;
+
+    tbody {
+      tr {
+        th {
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }
+        td {
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+
+          button {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.voucherValueBottom {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3em;
+}

@@ -1,0 +1,5 @@
+export const ROOT_ROUTE = '/'
+export const CAMPAIGNS_ROUTE = '/campaigns'
+export const MERCHANTS_ROUTE = '/merchants'
+export const NO_MATCH_ROUTE = '/404'
+export const STYLEGUIDE_ROUTE = '/styleguide'

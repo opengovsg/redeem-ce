@@ -1,0 +1,149 @@
+@import 'src/styles/styles';
+
+.login-page-container {
+  overflow: hidden;
+  background: $brand-base-050;
+
+  .login-page-main {
+    display: flex;
+    min-height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      overflow: visible;
+      height: 100%;
+
+      .row {
+        height: 100%;
+
+        .login-left {
+          padding-top: 5em;
+          padding-bottom: 2em;
+
+          .product-tagline {
+            margin-bottom: 3em;
+
+            img {
+              width: 280px;
+              margin-bottom: 0.5em;
+            }
+
+            p {
+              font-size: 1.2em;
+              color: $palette-neutral-800;
+            }
+          }
+
+          form {
+            .input-group {
+              .error-message {
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                color: $palette-red-500;
+              }
+            }
+          }
+
+          .back-button {
+            padding-left: 0;
+            margin-bottom: 2em;
+          }
+
+          form {
+            input {
+              width: 80%;
+            }
+          }
+        }
+
+        .login-right {
+          position: relative;
+          padding-bottom: 20em;
+
+          img {
+            position: absolute;
+
+            &.login-background {
+              left: -8em;
+              top: 0;
+              width: 600px;
+            }
+
+            &.login-people {
+              width: 90%;
+              top: 5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-container {
+    .login-page-main {
+      .container {
+        .row {
+          .login-left {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+          .login-right {
+            position: relative;
+            padding-bottom: 35em;
+
+            img {
+              position: absolute;
+
+              &.login-background {
+                width: 1200px;
+                left: -5em;
+                top: -5em;
+              }
+
+              &.login-people {
+                left: 3em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .login-page-container {
+    .login-page-main {
+      .container {
+        .row {
+          .login-left {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+          .login-right {
+            position: relative;
+            padding-bottom: 3em;
+
+            img {
+              position: absolute;
+
+              &.login-background {
+                width: 1200px;
+                left: 0;
+                top: -8em;
+              }
+
+              &.login-people {
+                left: 3em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.form-group {
+  margin-bottom: 3em;
+  .input-group {
+    margin-bottom: 2rem;
+
+    label {
+      display: block;
+      color: $palette-neutral-700;
+      font-weight: 500;
+    }
+
+    input {
+      margin-top: 0.2em;
+    }
+
+    .required {
+      color: $palette-red-500;
+      font-style: italic;
+      font-size: 0.8em;
+      margin: 0;
+      padding: 0;
+      margin-left: 5px;
+      margin-top: -10px;
+      &::before {
+        content: '*';
+        margin-right: 3px;
+      }
+    }
+
+    .caption {
+      color: $palette-neutral-600;
+      margin: 0;
+      margin-bottom: 0.8em;
+    }
+  }
+}
+
+.input-group-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  input[type='password'],
+  input[type='text'],
+  input[number],
+  select {
+    margin-right: 0.2em;
+  }
+}
+
+.legacy-input:not([type='checkbox']):not([type='radio']),
+.legacy-input[type='password'],
+.legacy-input[type='text'],
+.legacy-input[number],
+.legacy-input[email],
+.legacy-select {
+  width: 100%;
+  border: 1px solid $palette-neutral-200;
+  background: white;
+  color: $palette-neutral-900;
+  margin: 0;
+  text-decoration: none;
+  border-radius: $base-border-radius;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  padding: 0.8em;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $brand-primary-050;
+    border-radius: $base-border-radius;
+  }
+
+  &::-webkit-input-placeholder {
+    /* Edge */
+    color: $palette-neutral-600;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $palette-neutral-600;
+  }
+
+  &::placeholder {
+    color: $palette-neutral-600;
+  }
+
+  &:disabled,
+  &[readonly] {
+    background-color: $input-disabled-bg;
+    border-color: $input-disabled-border-color;
+    opacity: 1;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+
+  input[type='checkbox'] {
+    transform: scale(1.5);
+    margin-top: 0;
+  }
+
+  label {
+    margin: 0 1em;
+  }
+}
+
+.legacy-textarea {
+  border: 1px solid $palette-neutral-200;
+  color: $palette-neutral-900;
+  margin: 0;
+  text-decoration: none;
+  border-radius: $base-border-radius;
+  cursor: pointer;
+  display: flex;
+  padding: 0.5em;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $brand-primary-200;
+    border-radius: $base-border-radius;
+  }
+
+  &::-webkit-input-placeholder {
+    /* Edge */
+    color: $palette-neutral-500;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $palette-neutral-500;
+  }
+
+  &::placeholder {
+    color: $palette-neutral-500;
+  }
+}
+
+.text-area {
+  &.full-width {
+    width: 100%;
+  }
+}

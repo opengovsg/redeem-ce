@@ -1,0 +1,33 @@
+.merchantUpdatePaymentDetailsFormContainer {
+  width: 100%;
+
+  .formLabelRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .formFieldLabel {
+      margin-right: 8px;
+    }
+  }
+
+  .formFieldLabel {
+    margin-right: 8px;
+  }
+
+  .radioButton {
+    display: flex;
+    align-items: center;
+
+    input {
+      margin: 0;
+    }
+
+    label {
+      font-size: 14px;
+    }
+
+    > :not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+}

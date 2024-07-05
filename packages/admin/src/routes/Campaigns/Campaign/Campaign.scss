@@ -1,0 +1,132 @@
+@import 'src/styles/styles';
+
+.single-campaign-page-container {
+  width: 100%;
+  padding-bottom: 3em;
+  // padding-top: 1em;
+
+  h1 {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+  }
+
+  .search-and-top-buttons-container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .search-component-container {
+      .form-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        border: 1px solid $palette-neutral-200;
+        background: white;
+        color: $palette-neutral-900;
+        margin: 0;
+        text-decoration: none;
+        border-radius: $base-border-radius;
+        cursor: pointer;
+        height: 40px;
+        display: flex;
+
+        // position: relative;
+
+        label {
+          display: inline-block;
+          height: 100%;
+          width: 220px;
+          margin: 0;
+          padding: 0;
+          border-top-left-radius: $base-border-radius;
+          border-bottom-left-radius: $base-border-radius;
+          background: $palette-neutral-200;
+          color: $palette-neutral-600;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        select,
+        option {
+          box-sizing: border-box;
+          border-radius: 0;
+          padding: 0;
+          height: 40px;
+          padding-left: 10px;
+          padding-right: 20px;
+          background: $palette-neutral-200;
+          width: 300px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -o-appearance: none;
+          color: $palette-neutral-900;
+        }
+
+        input {
+          border-radius: 0;
+          height: 40px;
+          // max-width: 220px;
+        }
+
+        .icon {
+          // float: right;
+          // margin-top: -30px;
+
+          margin-left: -20px;
+
+          /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+          pointer-events: none;
+
+          /* everything after this is just to cover up the original arrow */
+
+          /* (for browsers that don't support the syntax used above) */
+          // background-color: #fff;
+          padding-left: 5px;
+          padding-right: 5px;
+          width: 1.5em;
+          height: 1.5em;
+
+          svg {
+            fill: $palette-neutral-900;
+          }
+        }
+
+        .btn-primary {
+          border-radius: 0;
+          border-top-right-radius: $base-border-radius;
+          border-bottom-right-radius: $base-border-radius;
+
+          &:hover {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+
+    .top-buttons-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 2em;
+
+      @media only screen and (min-width: 992px) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  table {
+    .table-header {
+      border-top: none;
+    }
+  }
+}

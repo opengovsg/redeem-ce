@@ -1,0 +1,16 @@
+.merchantDetailsFormContainer {
+  width: 100%;
+
+  .formLabelRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .formFieldLabel {
+      margin-right: 8px;
+    }
+  }
+
+  .formFieldLabel {
+    margin-right: 8px;
+  }
+}

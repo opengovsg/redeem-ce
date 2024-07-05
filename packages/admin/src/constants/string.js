@@ -1,0 +1,2 @@
+export const DEFAULT_NUMBER_RADIX = 10
+export const CONTACT_NUMBER_PREFIX = '65'

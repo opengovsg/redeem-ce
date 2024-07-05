@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+//admin font size should be around 14. just nice
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%; // 4
+  -webkit-tap-highlight-color: rgba(black, 0); // 5
+}
+
+p,
+button,
+input {
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+a {
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+}
+
+code {
+  display: block;
+  background: $palette-neutral-100;
+  color: $palette-neutral-700;
+  padding: 1em;
+  border-radius: 8px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: pre-wrap;
+  line-height: 150%;
+}

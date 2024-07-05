@@ -1,0 +1,36 @@
+$base-border-radius: 8px;
+$topbar-height: 70px;
+$footer-height: 200px;
+$sidebar-width: 240px;
+
+$input-disabled-bg: $palette-grey-200 !default;
+$input-disabled-border-color: null !default;
+
+// //spacing
+// $spacing-xxs: 8px;
+// $spacing-xs: 8px;
+// $spacing-s: 16px;
+// $spacing-m: 24px;
+// $spacing-l: 48px;
+// $spacing-xl: 48px;
+
+//shadows
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($palette-default-black, 0.075) !default;
+$box-shadow-md: 0 0.5rem 1rem rgba($palette-default-black, 0.15) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($palette-default-black, 0.175) !default;
+
+//12 campaign theme colors
+$campaign-yellow: #e3b50f;
+$campaign-orange: #e08b0a;
+$campaign-red: #d93c3c;
+$campaign-maroon: #662020;
+$campaign-pink: #be448d;
+$campaign-purple: #611485;
+$campaign-indigo: #4a448c;
+$campaign-darkblue: #101f53;
+$campaign-blue: #246b9f;
+$campaign-teal: #0f8696;
+$campaign-darkgreen: #0c5443;
+$campaign-green: #25a659;
+
+$chosen-campaign-color: $campaign-red;

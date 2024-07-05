@@ -1,0 +1,40 @@
+@import 'src/styles/colors.scss';
+
+$voucher-card-cutout-radius: 8px;
+$voucher-card-bottom-padding-top: 12px;
+$voucher-card-bottom-padding-bottom: 16px;
+$voucher-card-shift: 0px;
+$voucher-cell-border: 1px dashed #505798;
+
+.printableVouchersPage {
+  height: 297mm;
+  width: 210mm;
+  background: white;
+  display: flex;
+  flex-direction: column;
+
+  * {
+    font-family: 'Inter';
+    font-feature-settings:
+      'tnum' on,
+      'lnum' on,
+      'cv05' on;
+    border: none;
+    word-wrap: normal;
+    box-sizing: border-box;
+    // Make logo less blurred
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+  }
+
+  .printableVouchersPageBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}

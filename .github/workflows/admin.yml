@@ -1,0 +1,79 @@
+name: Admin
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    # defaults to run on opened, reopened, synchronized and assigned
+    branches: [develop]
+env: # Environment variables
+  PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+  NODE_OPTIONS: --max_old_space_size=4096
+jobs:
+  e2e:
+    name: e2e
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        # Opted to implement only two shards at this juncture due to the relatively low number of test cases currently available in the admin section.
+        # This decision aims to balance resource allocation and testing efficiency, ensuring that we neither overutilize nor underutilize our testing resources.
+        # As the test suite expands in the future, we will reassess the sharding strategy to accommodate growing demands and maintain optimal performance
+        shard: [1/2, 2/2]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          # npm cache files are stored in `~/.npm` on Linux/macOS
+          path: ~/.pnpm-store
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+      - run: corepack enable pnpm
+      - run: pnpm i --frozen-lockfile
+      - name: Set up PERCY_PARALLEL_TOTAL
+        # setting the total number of percy shards as an environment variable. If PERCY_PARALLEL_TOTAL is set to to -1 this tells the API to
+        # disregard the number of builds created and finalized. The API will then wait for a finalize all builds call, which will close the
+        # build for that nonce. The Percy CLI sets the total to -1 when the --parallel flag is passed.
+        run: echo "PERCY_PARALLEL_TOTAL=-1" >> $GITHUB_ENV
+      - run: npx playwright install-deps
+      - run: npx playwright install
+      #
+      - run: pnpm --filter @redeem/admin --shard ${{ matrix.shard }}
+      - name: Upload failure report to GitHub actions Artificats
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-report
+          path: playwright-report
+
+  # Multiple containers are deployed to facilitate the concurrent running of tests. To aggregate all Percy snapshots into a single build,
+  # an additional job is configured to execute at the conclusion of all test runs. This job is tasked with waiting for all containerized tests to complete,
+  # subsequently gathering all generated snapshots, and then uploading them cohesively to Percy.
+  upload-percy-snapshot:
+    # Merge reports after e2e test, even if some shards have failed
+    if: always()
+    needs: [e2e]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          # npm cache files are stored in `~/.npm` on Linux/macOS
+          path: ~/.pnpm-store
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+      - run: corepack enable pnpm
+      - name: Download node dependencies from npm cache instead
+        run: pnpm i --frozen-lockfile --prefer-offline
+      - name: "Finalise percy build into one"
+        if: ${{ env.PERCY_TOKEN != '' }}
+        run: pnpm --filter @redeem/admin percy:ci:build
