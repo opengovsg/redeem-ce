@@ -43,7 +43,7 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "dev": "npm start",
+    "dev": "pnpm start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,7 +55,7 @@
     "lint:trans": "eslint --no-eslintrc --config .i18n-json.eslintrc.js --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js src/locales/",
     "unused-exports": "ts-unused-exports tsconfig.json --showLineNumber --silent",
     "eject": "react-scripts eject",
-    "pre-push": "npm run unused-exports"
+    "pre-push": "pnpm run unused-exports"
   },
   "eslintConfig": {
     "extends": "react-app"
