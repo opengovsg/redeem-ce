@@ -27,3 +27,8 @@ RedeemCE is a monorepo managed with pnpm, consisting of several packages:
 
 Provides the interface to allow voucher recipients to view and redeem their
 vouchers.
+
+### Admin
+
+Allows a campaign administrator to create and manage voucher campaigns, including
+the onboarding of merchants and creation of digital vouchers.

@@ -34,7 +34,6 @@ export type CampaignVisibility = 'public' | 'private'
 export enum CampaignEligibility {
   signup_allowlist = 'signup_allowlist',
   signup_conditions_address = 'signup_conditions_address',
-  signup_conditions_hdb = 'signup_conditions_hdb',
   no_signup = 'no_signup',
 }
 
