@@ -1,0 +1,88 @@
+{
+  "name": "@redeem/merchant",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "GENERATE_SOURCEMAP=false PORT=3002 react-scripts start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@opengovsg/design-system-react": "^1.21.0",
+    "@zxing/library": "^0.21.0",
+    "axios": "^0.28.1",
+    "bluebird": "^3.7.2",
+    "framer-motion": "^11.2.10",
+    "humps": "^2.0.1",
+    "i18next": "^21.0.0",
+    "json2csv": "^5.0.6",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "media-devices": "^0.5.0",
+    "moment-timezone": "^0.5.34",
+    "prop-types": "^15.7.2",
+    "qs": "^6.12.3",
+    "react": "^18.3.1",
+    "react-app-polyfill": "^3.0.0",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^11.12.0",
+    "react-icons": "^5.2.1",
+    "react-query": "^3.33.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/eslint-parser": "^7.24.6",
+    "@babel/runtime": "^7.20.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/node": "^20.14.1",
+    "@types/react": "^18.2.6",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.6.3",
+    "babel-plugin-module-resolver": "4.0.0",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-babel-module": "^5.2.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "husky": "^4.3.8",
+    "jest": "^27.5.1",
+    "lint-staged": "^10.5.4",
+    "prettier": "2.8.8",
+    "react-test-renderer": "17.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

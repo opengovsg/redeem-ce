@@ -1,0 +1,10 @@
+{
+  "Logout": "退出",
+  "Enter shop code": "输入店代码",
+  "Enter your mobile number": "输入您的手机号码",
+  "Enter the 6 character code given to your shop": "请输入已发送至商店的6位代码",
+  "6 character code": "6位代码",
+  "Join shop": "加入商店",
+  "Don't have a shop code?": "没有商店代码？",
+  "Invalid shop code. Please check and re-enter the shop code sent to your point of contact.": "商店代码无效。 请检查并再输入已发送至商家的商店代码。"
+}

@@ -32,3 +32,7 @@ vouchers.
 
 Allows a campaign administrator to create and manage voucher campaigns, including
 the onboarding of merchants and creation of digital vouchers.
+
+### Merchant
+
+A web-based application for merchants to scan the digital voucher QR codes.

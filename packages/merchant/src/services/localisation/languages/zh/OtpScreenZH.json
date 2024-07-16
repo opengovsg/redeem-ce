@@ -1,0 +1,8 @@
+{
+  "Enter mobile number": "输入手机号码",
+  "Enter OTP": "输入一次性密码",
+  "Enter OTP sent to [[number]]": "输入已发送至 [[number]] 的一次性密码",
+  "Resend OTP": "重新发送一次性密码",
+  "Please input only numbers (no spaces or special characters).": "请输入数字（勿包含空格或特殊字符）",
+  "Invalid OTP. Please try again.": "一次性密码无效。 请再尝试。"
+}
