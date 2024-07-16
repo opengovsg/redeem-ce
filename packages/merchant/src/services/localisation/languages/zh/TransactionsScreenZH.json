@@ -1,0 +1,16 @@
+{
+  "Transactions": "交易",
+  "Total scanned by entire shop today": "全店今天扫描的总额",
+  "Total scanned by you today": "您今天扫描的总额",
+  "ENTIRE SHOP": "全店",
+  "YOU": "您",
+  "Vouchers you have scanned will appear here": "您所扫描的购物券会在这里显示",
+  "Vouchers all staff have scanned will appear here": "所有职员所扫描的购物券会在这里显示",
+  "Start scanning vouchers in the home page": "开始在主页扫描购物券",
+  "Show all transactions": "显示更多交易",
+  "Show less transactions": "显示更少交易",
+  "This page shows up to": "此页面最多显示",
+  "transactions. As such, the last day's total and transaction history may be inaccurate.": "个交易。因此，最后一天的交易总额和交易记录可能不准确。",
+  "This does not affect your payouts.\n To see all, ": "这不会影响您所能收到的付款。\n要查看全部交易, ",
+  "download a CSV file": "请下载CSV文件"
+}

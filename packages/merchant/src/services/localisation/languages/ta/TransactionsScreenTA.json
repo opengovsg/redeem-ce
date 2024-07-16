@@ -1,0 +1,16 @@
+{
+  "Transactions": "பரிவர்த்தனைகள்",
+  "Total scanned by entire shop today": "இன்று முழு கடையிலும் ஸ்கேன் செய்யப்பட்டது",
+  "Total scanned by you today": "இன்று நீங்கள் ஸ்கேன் செய்த மொத்தம்",
+  "ENTIRE SHOP": "மொத்த கடை",
+  "YOU": "நீங்கள்",
+  "Vouchers you have scanned will appear here": "நீங்கள் ஸ்கேன் செய்த பற்றுச்சீட்டுகள் இங்கே தோன்றும்.",
+  "Vouchers all staff have scanned will appear here": "ஊழியர்கள் அனைவரும் ஸ்கேன்செய்த பற்றுச்சீட்டுகள் இங்கே தோன்றும்",
+  "Start scanning vouchers in the home page": "முகப்பு பக்கத்தில் பற்றுச்சீட்டுகளை ஸ்கேன் செய்யத் தொடங்குங்கள்.",
+  "Show all transactions": "அனைத்து பரிவர்த்தனைகளையும் காட்டு",
+  "Show less transactions": "குறைவான பரிவர்த்தனைகளைக் காட்டு",
+  "This page shows up to": "இந்தப் பக்கத்தில்",
+  "transactions. As such, the last day's total and transaction history may be inaccurate.": "பரிவர்த்தனைகள் வரை காண்பிக்கப்படும். எனவே, கடைசி நாளின் மொத்தமும் பரிவர்த்தனை வரலாறும் துல்லியமாக இல்லாமல் போகலாம்.",
+  "This does not affect your payouts.\n To see all, ": "இதனால் உங்களுக்கு வழங்கப்படும் தொகை பாதிக்கப்படாது.\n அனைத்தையும் காண, ",
+  "download a CSV file": "CSV கோப்பைப் பதிவிறக்கம் செய்யவும்"
+}
