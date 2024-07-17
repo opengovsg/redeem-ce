@@ -20,7 +20,7 @@
     "dompurify": "^3.1.6",
     "focus-visible": "^5.2.0",
     "framer-motion": "^11.1.9",
-    "html2pdf.js": "^0.9.3",
+    "html2pdf.js": "^0.10.2",
     "launchdarkly-react-client-sdk": "^3.3.2",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
