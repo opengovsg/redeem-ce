@@ -476,8 +476,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       launchdarkly-react-client-sdk:
-        specifier: ^3.0.8
-        version: 3.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^3.3.2
+        version: 3.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -6128,12 +6128,6 @@ packages:
 
   launchdarkly-js-sdk-common@5.2.0:
     resolution: {integrity: sha512-aLv2ZrUv229RIwLtFhdILu2aJS/fqGSJzTk4L/bCDZA8RuIh7PutI3ui/AJeNnzPzjKzdEQZw6wVhkVc84baog==}
-
-  launchdarkly-react-client-sdk@3.3.0:
-    resolution: {integrity: sha512-vVG5qPNrqTQg/tdj0ambZckYH+XW1xhK9cMsZsmtNi1eUMeE/hXZtxrBNeLQIU3ddYPos557kLDGFEcI14vijQ==}
-    peerDependencies:
-      react: ^16.6.3 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.4 || ^17.0.0 || ^18.0.0
 
   launchdarkly-react-client-sdk@3.3.2:
     resolution: {integrity: sha512-Cusw0aB+L65FceGQQ77IFhKZT+J+NezDtmahhI/LtK/Da2YhlbSmxhInSLdf325e3Umj0+foDIOkFt/OOFmQsQ==}
@@ -16662,14 +16656,6 @@ snapshots:
       base64-js: 1.5.1
       fast-deep-equal: 2.0.1
       uuid: 8.3.2
-
-  launchdarkly-react-client-sdk@3.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      hoist-non-react-statics: 3.3.2
-      launchdarkly-js-client-sdk: 3.3.0
-      lodash.camelcase: 4.3.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
 
   launchdarkly-react-client-sdk@3.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
