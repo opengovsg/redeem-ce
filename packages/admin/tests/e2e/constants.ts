@@ -17,8 +17,8 @@ export const API_ROUTE_CREATE_CAMPAIGN_VOUCHERS =
   '/v1/campaigns/*/vouchers/create-group'
 export const API_ROUTE_RECIPIENT_WHITELIST_CHECK =
   '/v1/campaigns/*/whitelist/check?**'
-export const API_ROUTE_ADDRESS_IN_BLACKLIST_CHECK =
-  '/v1/campaigns/*/blacklist?**'
+export const API_ROUTE_ADDRESS_IN_DENYLIST_CHECK =
+  '/v1/campaigns/*/denylist?**'
 export const API_URL =
   process.env.REACT_APP_REDEEM_URL || 'http://localhost:10000'
 export const DEFAULT_RESPONSE_HEADERS = { 'Access-Control-Allow-Origin': '*' }

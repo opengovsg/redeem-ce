@@ -676,7 +676,7 @@ function getTwilioCredentials(campaignId: string): Promise<TwilioCredentials> {
     .then((res) => res.data)
 }
 
-function checkIfAddressInBlacklistForCampaign({
+function checkIfAddressInDenylistForCampaign({
   block,
   floor,
   unit,
@@ -689,10 +689,10 @@ function checkIfAddressInBlacklistForCampaign({
   postalCode: string
   campaignId: string
 }) {
-  log('[INFO] checkIfAddressInBlacklistForCampaign')
+  log('[INFO] checkIfAddressInDenylistForCampaign')
   const headers = getAuthorizationHeader()
   return baseConfig
-    .get(`/campaigns/${campaignId}/blacklist`, {
+    .get(`/campaigns/${campaignId}/denylist`, {
       headers,
       params: {
         block,
@@ -945,7 +945,7 @@ export {
   addTwilioCredentials,
   getTwilioCredentials,
   fetchCampaignMetrics,
-  checkIfAddressInBlacklistForCampaign,
+  checkIfAddressInDenylistForCampaign,
   // Vouchers
   fetchAllVouchersByCampaignId,
   createVoucherForCampaign,

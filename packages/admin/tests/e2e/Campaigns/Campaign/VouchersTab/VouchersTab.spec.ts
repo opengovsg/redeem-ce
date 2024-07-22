@@ -20,7 +20,7 @@ test.describe('Campaign page voucher tab tests', () => {
     await vouchersTabPage.mockGetCampaignVouchersOkResponse()
     await vouchersTabPage.mockGetTwilioCredentialsOkResponse()
     await vouchersTabPage.mockGetTwilioSmsUsageOkResponse()
-    await vouchersTabPage.mockCheckAddressInBlacklistResponse(false)
+    await vouchersTabPage.mockCheckAddressInDenylistResponse(false)
   })
 
   test('Should show correct vouchers when next or previous page is clicked and show correct pagination state', async ({

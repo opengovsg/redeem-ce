@@ -159,7 +159,7 @@ const ConfirmationStep = ({
    * These booleans determine if the different orange checkers should be shown.
    * If vouchers have claimed before, show orange claimed before orange checkers
    * If not claimed before and it's a whitelist campaign, show if not in whitelist if user not in whitelist
-   * If not claimed before and campaign is address type, show if address in blacklist else dont show any orange checker
+   * If not claimed before and campaign is address type, show if address in denylist else dont show any orange checker
    */
   const isShowRecipientIdClaimedBefore =
     voucherRecipientIdParam && !isSearchRecipientIdResultsHidden
@@ -174,7 +174,7 @@ const ConfirmationStep = ({
 
   const isShowAddressClaimedBefore =
     voucherPostalCodeParam && !isSearchAddressesResultsHidden
-  const isShowAddressInBlacklist =
+  const isShowAddressInDenylist =
     voucherPostalCodeParam &&
     isCreateVoucherAddressUsePrefill &&
     isSearchAddressesResultsHidden
@@ -187,7 +187,7 @@ const ConfirmationStep = ({
     isShowRecipientIdNotInWhitelist ||
     !voucherPostalCodeParam ||
     isShowAddressClaimedBefore ||
-    isShowAddressInBlacklist
+    isShowAddressInDenylist
 
   const formattedAddress = formatAddress({
     voucherBlockNumberParam,
@@ -324,9 +324,9 @@ const ConfirmationStep = ({
                   showIcon
                 />
               )}
-              {isShowAddressInBlacklist && (
+              {isShowAddressInDenylist && (
                 <CheckerResult
-                  id="confirmation-step-address-checker-in-blacklist"
+                  id="confirmation-step-address-checker-in-denylist"
                   text={
                     <VStack align="start" spacing="8px">
                       <Text textStyle="subhead1" color="neutral.800">

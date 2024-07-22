@@ -12,7 +12,7 @@ import qs, { ParsedQs } from 'qs'
 import { baseTest } from '../../../base.fixture'
 import {
   API_CAMPAIGN_VOUCHERS_PAGE_1_END_CURSOR,
-  API_ROUTE_ADDRESS_IN_BLACKLIST_CHECK,
+  API_ROUTE_ADDRESS_IN_DENYLIST_CHECK,
   API_ROUTE_CREATE_CAMPAIGN_VOUCHERS,
   API_ROUTE_GET_CAMPAIGN_VOUCHERS,
   API_ROUTE_GET_PRINT_GROUPED_VOUCHERS,
@@ -265,9 +265,9 @@ export class VouchersTabPage extends CampaignPage {
     )
   }
 
-  async mockCheckAddressInBlacklistResponse(result: boolean) {
+  async mockCheckAddressInDenylistResponse(result: boolean) {
     await this.page.route(
-      `${API_URL}${API_ROUTE_ADDRESS_IN_BLACKLIST_CHECK}`,
+      `${API_URL}${API_ROUTE_ADDRESS_IN_DENYLIST_CHECK}`,
       (route) => {
         return route.fulfill({
           status: 200,
@@ -421,7 +421,7 @@ export class VouchersTabPage extends CampaignPage {
 
   async expectAddressNotEligibleNotVisibleInConfirmationPage(): Promise<void> {
     const checkerResult = this.page.locator(
-      '#confirmation-step-address-checker-in-blacklist'
+      '#confirmation-step-address-checker-in-denylist'
     )
 
     await expect(
@@ -431,7 +431,7 @@ export class VouchersTabPage extends CampaignPage {
 
   async expectAddressNotEligibleVisibleInConfirmationPage(): Promise<void> {
     const checkerResult = this.page.locator(
-      '#confirmation-step-address-checker-in-blacklist'
+      '#confirmation-step-address-checker-in-denylist'
     )
 
     await expect(
@@ -456,7 +456,7 @@ export class VouchersTabPage extends CampaignPage {
   expectAddressNotEligibleMessageVisible(): Promise<void> {
     return expect(
       this.page
-        .locator('#address-in-blacklist-checker-result-see-details-button')
+        .locator('#address-in-denylist-checker-result-see-details-button')
         .locator('text="Address not eligible for campaign"')
     ).toBeVisible()
   }
@@ -464,7 +464,7 @@ export class VouchersTabPage extends CampaignPage {
   expectAddressNotEligibleMessageNotVisible(): Promise<void> {
     return expect(
       this.page.locator(
-        '#address-in-blacklist-checker-result-see-details-button'
+        '#address-in-denylist-checker-result-see-details-button'
       )
     ).toHaveCount(0)
   }
