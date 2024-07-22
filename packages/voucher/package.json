@@ -8,7 +8,7 @@
     "@chakra-ui/utils": "^2.0.14",
     "@datadog/browser-logs": "^4.28.0",
     "@datadog/browser-rum": "^4.8.1",
-    "@emotion/react": "^11.11.4",
+    "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.8.1",
     "@playwright/test": "^1.45.2",
     "@rehooks/local-storage": "^2.4.4",
