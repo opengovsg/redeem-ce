@@ -9,7 +9,7 @@
     "@chakra-ui/utils": "^2.0.14",
     "@datadog/browser-rum": "^4.8.1",
     "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/styled": "^11.13.0",
     "@opengovsg/design-system-react": "^1.21.0",
     "@xstate/cli": "^0.5.17",
     "@xstate/react": "^3.2.2",
