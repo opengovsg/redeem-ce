@@ -74,7 +74,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
-    "@percy/cli": "^1.28.6",
+    "@percy/cli": "^1.29.0",
     "@percy/playwright": "^1.0.6",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
