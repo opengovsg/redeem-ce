@@ -7,7 +7,3 @@ export const TEMPLATE_CATEGORY =
   'e.g. redeemsg_general_vouchers, preferably following snake_case'
 export const TEMPLATE_EXTRA_QR_PREFIX =
   'e.g. cfhp, which will then be appended to voucher ids then it becomes rsg-cfhp:v_123 etc'
-export const TEMPLATE_POSTMAN_CAMPAIGN_ID =
-  'e.g. campaign_31b4f52f-66aa-474c-ad85-555024a408fd OR null'
-export const TEMPLATE_SINGPASS_ESERVICE_ID =
-  'e.g. {{env}}-{{UUID}}-LOGIN-{{agencyName}}'

@@ -25,7 +25,7 @@ const CampaignSignUpLink = () => {
       toastSuccessWithoutTitle({
         primaryText: 'Campaign link copied! ',
         secondaryText:
-          'Send this link to eligible applicants for them to claim their vouchers via Singpass.',
+          'Send this link to eligible applicants for them to claim their vouchers.',
       }),
   })
 
