@@ -27,8 +27,8 @@ importers:
         specifier: ^2.0.14
         version: 2.0.14
       '@datadog/browser-rum':
-        specifier: ^4.8.1
-        version: 4.50.1(@datadog/browser-logs@4.50.1)
+        specifier: ^5.28.1
+        version: 5.28.1(@datadog/browser-logs@4.50.1)
       '@emotion/react':
         specifier: ^11.13.0
         version: 11.13.0(@types/react@18.3.3)(react@18.3.1)
@@ -432,10 +432,10 @@ importers:
         version: 2.0.14
       '@datadog/browser-logs':
         specifier: ^4.28.0
-        version: 4.50.1(@datadog/browser-rum@4.50.1)
+        version: 4.50.1(@datadog/browser-rum@5.28.1)
       '@datadog/browser-rum':
-        specifier: ^4.8.1
-        version: 4.50.1(@datadog/browser-logs@4.50.1)
+        specifier: ^5.28.1
+        version: 5.28.1(@datadog/browser-logs@4.50.1)
       '@emotion/react':
         specifier: ^11.13.0
         version: 11.13.0(@types/react@18.3.3)(react@18.3.1)
@@ -2140,6 +2140,9 @@ packages:
   '@datadog/browser-core@4.50.1':
     resolution: {integrity: sha512-2ypS19XngsMu6W4qUBtDwvImFz886Im+PziOnEycO1w41TVS5LH8/vWBMvjSf8Suer+CeRjRN9IOu0ocRx9BVw==}
 
+  '@datadog/browser-core@5.28.1':
+    resolution: {integrity: sha512-teBNd2pynPWPThsjDqLzzk4mbxOVqQ5MkbPbIhg+1Sl6idsGmpapDp6GSMP8YyToayjgMuApel2GYp0T05GOeA==}
+
   '@datadog/browser-logs@4.50.1':
     resolution: {integrity: sha512-uSM+T+hAQDH4lUjWNNyj8MfhQKp+sFo88UBaHUzpg0Kio/gZ+tIL7/HmTLCN5eLDWNJfH8eJuCb5Gtcvo14Pkg==}
     peerDependencies:
@@ -2148,13 +2151,13 @@ packages:
       '@datadog/browser-rum':
         optional: true
 
-  '@datadog/browser-rum-core@4.50.1':
-    resolution: {integrity: sha512-ABCzEjNiBq3izapvSq6uujdx9h7L4RM44n22qDhwSIBlQY6Psf9VlzlQ5fueCALoj2LgVy4rYDj5RHfGaF/lAQ==}
+  '@datadog/browser-rum-core@5.28.1':
+    resolution: {integrity: sha512-O6K3/5lGw3uEv9csQm5V/qr16/kE5vVDfFmI0xB/A8wTdUE48intbUh7d7rIbDxYmD2DWUgv4eP30O05LR4pnw==}
 
-  '@datadog/browser-rum@4.50.1':
-    resolution: {integrity: sha512-Gcs8fMoufOr4Xlhwx0g6CHvgcXVNeCM+IyAtRAwoCBeezRhL18Jo1LALE+nsLegNKgNLO1f4vjm5TBx1WsnXWQ==}
+  '@datadog/browser-rum@5.28.1':
+    resolution: {integrity: sha512-Q6vtTd3bcVLriWNxdSjx7MTNYTO2Jv43KO4x5DUdd2nGPPuvWawsccYK3UzD+V6XGtq5nFeAx9IAFHr7vdBQxQ==}
     peerDependencies:
-      '@datadog/browser-logs': 4.50.1
+      '@datadog/browser-logs': 5.28.1
     peerDependenciesMeta:
       '@datadog/browser-logs':
         optional: true
@@ -4866,6 +4869,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -11397,22 +11401,24 @@ snapshots:
 
   '@datadog/browser-core@4.50.1': {}
 
-  '@datadog/browser-logs@4.50.1(@datadog/browser-rum@4.50.1)':
+  '@datadog/browser-core@5.28.1': {}
+
+  '@datadog/browser-logs@4.50.1(@datadog/browser-rum@5.28.1)':
     dependencies:
       '@datadog/browser-core': 4.50.1
     optionalDependencies:
-      '@datadog/browser-rum': 4.50.1(@datadog/browser-logs@4.50.1)
+      '@datadog/browser-rum': 5.28.1(@datadog/browser-logs@4.50.1)
 
-  '@datadog/browser-rum-core@4.50.1':
+  '@datadog/browser-rum-core@5.28.1':
     dependencies:
-      '@datadog/browser-core': 4.50.1
+      '@datadog/browser-core': 5.28.1
 
-  '@datadog/browser-rum@4.50.1(@datadog/browser-logs@4.50.1)':
+  '@datadog/browser-rum@5.28.1(@datadog/browser-logs@4.50.1)':
     dependencies:
-      '@datadog/browser-core': 4.50.1
-      '@datadog/browser-rum-core': 4.50.1
+      '@datadog/browser-core': 5.28.1
+      '@datadog/browser-rum-core': 5.28.1
     optionalDependencies:
-      '@datadog/browser-logs': 4.50.1(@datadog/browser-rum@4.50.1)
+      '@datadog/browser-logs': 4.50.1(@datadog/browser-rum@5.28.1)
 
   '@dual-bundle/import-meta-resolve@4.1.0': {}
 
